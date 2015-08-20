@@ -3,7 +3,7 @@ var $wrap = $("#numWrap"), $strip = $("#strip"),
     wrapWidth = $wrap.width() + $leftArrow.width(),
     margin = 10;
 
-fill(20); select($(".numberItem").first());
+fillQuestion(40); select($(".numberItem").first());
 
 $strip.on("click", ".numberItem", function() { select($(this)); });
 
@@ -27,7 +27,7 @@ function focus(elem) {
     }
 }
 
-$(".wrapper").on("click", "a.arrow", function() {
+$(".wrapper").on("click", ".arrow", function() {
     var stripPos = $strip.position();
     if (this.id == "lft") {
         $strip.css({"left": stripPos.left + (wrapWidth / 2)});
@@ -36,7 +36,7 @@ $(".wrapper").on("click", "a.arrow", function() {
     }
 });
 
-$(".controls").on("click", "a.arrow", function() {
+$(".controls").on("click", ".button", function() {
     var $sel = $(".selected"), numPos, $sel, elemWidth;
       $elem = $sel.length > 0 ? $sel.first() : $(".numberItem").first();
     if (this.id == "lft") {
@@ -56,7 +56,7 @@ $(".controls").on("click", "a.arrow", function() {
     }
 });
 
-function fill(num){
+function fillQuestion(num){
     for (var i = 1; i <= num; i++) {
         var $d = $("<a href='#' class='numberItem'>" + i + "</a>");
         $strip.append($d);
