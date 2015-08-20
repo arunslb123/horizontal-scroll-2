@@ -11,7 +11,7 @@ div.numWrap {
     float: left; height: 64px; line-height: 64px;
     width: 80%; vertical-align: middle;
     overflow: hidden; position: relative;
-    overflow: hidden; overflow-x: scroll; position: relative; z-index: 0;
+    overflow: hidden; position: relative; z-index: 0;
     -webkit-overflow-scrolling: touch; 
     -webkit-transform: translatez(0);
     -ms-overflow-style: -ms-autohiding-scrollbar;
