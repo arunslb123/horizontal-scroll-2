@@ -27,14 +27,44 @@ function focus(elem) {
     }
 }
 
-$(".wrapper").on("click", ".arrow", function() {
-    var stripPos = $strip.position();
-    if (this.id == "lft") {
-        $strip.css({"left": stripPos.left + (wrapWidth / 2)});
-    } else {
-        $strip.css({"left": stripPos.left - (wrapWidth / 2)});
-    }
+// $(".wrapper").on("click", ".arrow", function() {
+//     var stripPos = $strip.position();
+//     if (this.id == "lft") {
+//         $strip.css({"left": stripPos.left + (wrapWidth / 2)});
+//     } else {
+//         $strip.css({"left": stripPos.left - (wrapWidth / 2)});
+//     }
+// });
+
+
+
+$("#lft").click(function () {
+  var leftPos = $('#numWrap').scrollLeft();
+$("#numWrap").animate({scrollLeft: leftPos - 200}, 800);
 });
+
+$("#rgt").click(function () {
+  var leftPos = $('#numWrap').scrollLeft();
+$("#numWrap").animate({scrollLeft: leftPos + 200}, 800);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 $(".controls").on("click", ".button", function() {
     var $sel = $(".selected"), numPos, $sel, elemWidth;
