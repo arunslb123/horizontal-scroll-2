@@ -38,12 +38,12 @@ function focus(elem) {
 
 
 
-$("#lft").click(function () {
+$("#left-arrow").click(function () {
   var leftPos = $('#numWrap').scrollLeft();
 $("#numWrap").animate({scrollLeft: leftPos - 200}, 800);
 });
 
-$("#rgt").click(function () {
+$("#right-arrow").click(function () {
   var leftPos = $('#numWrap').scrollLeft();
 $("#numWrap").animate({scrollLeft: leftPos + 200}, 800);
 });
