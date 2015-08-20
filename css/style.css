@@ -100,3 +100,4 @@ a, a:focus, a:active, a:link, a:visited {
 .prev:hover::after {
   border-right-color: #EA804C;
 }
+
