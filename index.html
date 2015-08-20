@@ -20,40 +20,34 @@
   </head>
   <body>
 
-  <div class="row question-bg">
-     <div class="col-xs-1">
-       <div class="glyphicon glyphicon-chevron-left navigation-color leftArrowDisable" id="leftArrow">
-
-       </div>
-      </div>
-      <div class="col-xs-9">
-
-              <div class="container-fluid" id="scrollquestion" style="overflow-x:hidden;white-space: nowrap;overflow-y:hidden ;top: 500px; padding: 4px; width:auto;">
-
-
-              </div>
-      </div>
-      <div class="col-xs-1">
-        <div class="glyphicon glyphicon-chevron-right navigation-color" id="rightArrow">
-        </div>
-      </div>
-  </div>
-
-<br><br><br><br><br>
-  <div class="row">
-   <div class="col-xs-1 col-xs-offset-2">
-       <div class="btn button prev" id="prev">Previous</div>
+<div class="wrapper">
+    <div class="arrows">
+        <a id="lft" class="arrow" href="#">&#x3008;</a>
     </div>
-    <div class="col-xs-1 col-xs-offset-4" id="next">
+    <div id="numWrap" class="numWrap">
+        <div id="strip" class="strip"></div>
+    </div>
+    <div class="arrows">
+        <a id="rgt" class="arrow" href="#">&#x3009;</a>
+    </div>
+</div>
+<!-- <div class="controls">
+    <div class="arrows">
+        <a id="lft" class="arrow" href="#">&#x3008;&nbsp; Previous</a>
+    </div>
+    <div class="arrows">
+        <a id="rgt" class="arrow" href="#">Next &nbsp;&#x3009;</a>
+    </div>
+<div> -->
+<br><br><br><br><br>
+  <div class="row controls">
+   <div class="col-xs-1 col-xs-offset-2">
+       <div class="btn button prev" id="lft">Previous</div>
+    </div>
+    <div class="col-xs-1 col-xs-offset-4" id="rgt">
        <div class="btn button next">Next</div>
     </div>
 </div>
-<!--
-<div class="row">
-   <div class="col-xs-1 col-xs-offset-4">
-      <div class="btn button prev" id="prev">Previous</div>
-    </div>
-    </div> -->
 
 
 
@@ -61,8 +55,6 @@
     <script src="js/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/dragscrollable.js"></script>
     <script src="js/script.js"></script>
-
   </body>
 </html>
